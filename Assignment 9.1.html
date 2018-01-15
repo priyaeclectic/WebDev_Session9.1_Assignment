@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Assignment 9.1 </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+  </style>
+</head>
+
+<body><br><br><br>
+	<div class="container">
+  <h3>Popover Example</h3> <!--Buttons created with popup details to be displayed-->
+  <input type="button" data-toggle="popover" title="Popover Title" data-placement="top" data-content="Default popover" value="Popover">
+  <input type="button" data-toggle="popover" title="Popover Title" data-placement="top" data-content="Another popover" value="Another Popover">
+  <input type="button" data-toggle="popover" title="Popover Title" data-placement="top" data-content="A larger popover to demonstrate max-width of bootstrap" value="Large Popover">
+  <input type="button" data-toggle="popover" title="Popover Title" data-placement="top" data-content="The Last popover!" value="Last Popover">
+</div>
+
+</body>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   //Creates the popup
+});
+</script>	
+</html>
